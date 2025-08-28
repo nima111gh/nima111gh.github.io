@@ -1,0 +1,494 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Global Style */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+}
+
+h1,
+h2 {
+    font-family: 'Merriweather', serif;
+    color: #00274d;
+}
+
+/* Hero / Bio Section */
+/* Biography Section */
+.bio-section {
+    background: #fdfdfd;
+    padding: 4em 2em;
+    z-index: -1;
+}
+
+.bio-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3em;
+    align-items: center;
+}
+
+.bio-photo img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bio-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+    color: #00274d;
+}
+
+.tagline {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 1.5em;
+    color: #555;
+}
+
+.bio {
+    font-size: 1.05em;
+    line-height: 1.8;
+    margin-bottom: 1.5em;
+    color: #444;
+}
+
+.credentials {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2em;
+}
+
+
+.credentials li {
+    margin: 0.5em 0;
+    font-size: 1em;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.credentialsf {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2em;
+}
+
+.credentialsf li {
+    margin: 0.5em 0;
+    font-size: 20px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.credentialsf li::before {
+    content: "•";
+    color: #ffcc00;
+    margin-right: 0.5em;
+    font-size: 1.2em;
+}
+
+
+.credentials li::before {
+    content: "•";
+    color: #ffcc00;
+    margin-right: 0.5em;
+    font-size: 1.2em;
+}
+
+.btn {
+    display: inline-block;
+    background: #00274d;
+    color: white;
+    padding: 0.8em 1.5em;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #004080;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .bio-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .bio-photo img {
+        margin: auto;
+    }
+}
+
+
+/* Services */
+#services {
+    padding: 3em 2em;
+    text-align: center;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.service-card {
+    background: white;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+/* Contact Form */
+#contact {
+    padding: 3em 2em;
+    background: #fff;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin: 0.5em 0;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    margin-top: 1em;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #00274d;
+    color: white;
+}
+
+/* Slideshow Styles */
+.slideshow {
+    position: relative;
+    max-width: 350px;
+    margin: auto;
+}
+
+.slideshow img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Hide all slides by default */
+.slides {
+    display: none;
+}
+
+/* Fade animation */
+.fade {
+    animation: fadeEffect 1.5s;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0.9;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* LinkedIn Section */
+.linkedin-section {
+    background: linear-gradient(10deg, #0A66C2, #004182);
+    color: white;
+    text-align: center;
+    padding: 5em 2em;
+    margin-top: 5em;
+    /* spacing before footer */
+    position: relative;
+    overflow: hidden;
+}
+
+.linkedin-container {
+    max-width: 700px;
+    margin: auto;
+    animation: fadeUp 1.5s ease both;
+}
+
+.linkedin-subtitle {
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 0.8em;
+    opacity: 0.8;
+}
+
+.linkedin-section h2 {
+    font-size: 2.4em;
+    margin-bottom: 0.6em;
+    font-weight: 600;
+}
+
+.letsconnect {
+    font-style: italic;
+}
+
+.linkedin-desc {
+    font-size: 1.1em;
+    opacity: 0.9;
+    margin-bottom: 2em;
+    line-height: 1.6;
+}
+
+.linkedin-btn {
+    display: inline-flex;
+    align-items: center;
+    background: white;
+    color: #0A66C2;
+    padding: 1em 2em;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.linkedin-btn:hover {
+    background: #004182;
+    color: white;
+}
+
+/* Fade-up animation */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Navigation Bar */
+
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 2em;
+    background-color: #fff;
+}
+
+.nav-brand {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #0A66C2;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    z-index: 20;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #0A66C2;
+}
+
+/* Hamburger menu (hidden on desktop) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 65px;
+        right: 0;
+        background: white;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+        padding: 1.5em 0;
+        display: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+.message {
+    min-height: 150px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    resize: none;
+    /* disables manual resizing */
+    font-size: 1em;
+    line-height: 1.5;
+    transition: border 0.3s ease;
+}
+
+
+.message:focus {
+    border: 1px solid #0A66C2;
+    outline: none;
+}
+
+/* Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0A66C2, #004182);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+    pointer-events: none;
+}
+
+#backToTop svg {
+    width: 22px;
+    height: 22px;
+}
+
+#backToTop.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+#backToTop:hover {
+    background: linear-gradient(135deg, #004182, #0A66C2);
+    transform: scale(1.1);
+}
+
+/* 📱 Always visible on mobile */
+@media (max-width: 768px) {
+    #backToTop {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+        pointer-events: auto !important;
+    }
+}
+
+/* Lan switch */
+
+.lang-switch {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    top: 15px;
+}
+
+.lang-switch.right {
+    right: 30px;
+    /* on the right for English */
+    left: auto;
+}
+
+.lang-switch.left {
+    left: 30px;
+    /* on the left for Farsi */
+    right: auto;
+}
+
+.lang-switch button {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.lang-switch button:hover,
+.lang-switch button.active {
+    background: #0A66C2;
+    color: white;
+    border-color: #0A66C2;
+}
+
+
+.lang-fa {
+    display: none;
+}
+
+@media (max-width: 1415px) {
+    .lang-switch {
+        margin: 80px auto;
+        /* center horizontally */
+        order: 0;
+    }
+}

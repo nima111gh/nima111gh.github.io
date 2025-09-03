@@ -188,8 +188,8 @@
 
 <div class="bio-text lang lang-en" >
     <form action="https://formspree.io/f/xyzdgder" method="POST" class="contact-form" id="contact-form">
-      <input class="name" type="text" name="name" pattern="[a-z]" placeholder="Your Name" required>
-      <input class="lname" type="text" name="lname" placeholder="Your Last name" required>
+      <input class="name" type="text" name="name" pattern="[\u0600-\u06FF\sA-Za-z]+" placeholder="Your Name" required>
+      <input class="lname" type="text" name="lname" pattern="[\u0600-\u06FF\sA-Za-z]+" placeholder="Your Last name" required>
       <input class="email" type="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="Your Email (eg. youremail@email.com)" required>
       <input class="phones" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}|[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="Phone Number (eg. xxx-xxx-xxxx)" required>
       <textarea class="message" name="message" placeholder="Describe your legal problem, preferably in full." required></textarea>
@@ -201,8 +201,8 @@
 <!-- FA -->
 <div class="bio-text lang lang-fa" dir="rtl">
     <form action="https://formspree.io/f/xyzdgder" method="POST" class="contact-form" id="contact-form">
-      <input class="name" type="text" name="name" pattern="[a-z]" placeholder="اسم خود را وارد کنید (به انگلیسی)" required>
-      <input class="name" type="text" name="name" pattern="[a-z]" placeholder="فامیلی خود را وارد کنید (به انگلیسی)" required>
+      <input class="name" type="text" name="name" pattern="[\u0600-\u06FF\sA-Za-z]+" placeholder="اسم خود را وارد کنید" required>
+      <input class="name" type="text" name="name" pattern="[\u0600-\u06FF\sA-Za-z]+" placeholder="فامیلی خود را وارد کنید" required>
       <input class="email" type="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="ایمیل خود را وارد کنید" required>
       <input dir="rtl" class="phones" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="شماره تلفن همراه خود را وارد کنید (eg. xxx-xxx-xxxx)"required>
       <textarea class="message" name="message" placeholder="مشکل حقوقی خود را ترجیحا به صورت کامل شرح دهید" required></textarea>
@@ -339,3 +339,4 @@
 
 </body>
 </html>
+

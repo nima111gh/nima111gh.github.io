@@ -13,12 +13,20 @@ function showSlides() {
 }
 
 // Responsive Navbar Toggle
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('nav-links');
+// Hamburger toggle for both EN and FA
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector(".hamburger");
 
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+    hamburger.addEventListener("click", () => {
+        // find any visible nav-links (EN or FA)
+        document.querySelectorAll(".nav-links").forEach(nav => {
+            nav.classList.toggle("active");
+        });
+    });
 });
+
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const backToTop = document.getElementById("backToTop");
@@ -98,20 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 100); // tiny delay to ensure layout is ready
     }
 });
-const translations = {
-    en: {
-        home: "Home",
-        bio: "Biography",
-        contact: "Form",
-        linkedin: "LinkedIn"
-    },
-    fa: {
-        home: "خانه",
-        bio: "بیوگرافی",
-        contact: "فرم",
-        linkedin: "لینکدین"
-    }
-};
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const banners = document.querySelectorAll("[data-animate]");

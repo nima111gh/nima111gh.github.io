@@ -445,7 +445,7 @@ h2 {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        top: 0.5px;
+        top: 15px;
         margin: 0;
         padding: 0;
 
@@ -509,6 +509,7 @@ h2 {
 
     .hamburger {
         display: flex;
+        margin: 20px 0 0 0;
     }
 }
 
@@ -622,9 +623,16 @@ h2 {
 }
 
 @media (max-width: 1415px) {
-    .lang-switch {
-        margin: 70px 0 auto;
-        order: 0;
+    .lang-switch.right {
+        left: 20px;
+        top: 30px;
+        right: auto;
+    }
+
+    .lang-switch.left {
+        right: 20px;
+        top: 30px;
+        left: auto;
     }
 }
 
@@ -684,4 +692,26 @@ h2 {
 .cta-btn:hover {
     background: #f0f0f0;
     font-size: 19px;
+}
+
+@media (max-width: 768px) {
+    #nav-links-fa {
+        position: absolute;
+        top: 65px;
+        right: 0;
+        /* same as EN */
+        background: white;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+        padding: 1.5em 0;
+        display: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        z-index: 1000;
+    }
+
+    #nav-links-fa.active {
+        display: flex;
+    }
 }

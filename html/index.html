@@ -11,16 +11,28 @@
     <!-- Navigation Bar -->
     <header>
       <nav class="navbar">
-        <a href="/html/index.html" style="text-decoration: none; cursor:pointer; font-size: 17px;"><div class="nav-brand">Keyoumars Ghorbania</div></a>
+        <a href="/html/index.html" style="text-decoration: none; cursor:pointer; font-size: 17px;"><div class="nav-brand" >Keyoumars Ghorbania</div></a>
         <span class="nav-brand2">KG</span>
 
-
-        <ul class="nav-links" id="nav-links">
+<div class="lang lang-en" >
+        <ul class="nav-links" id="nav-links"  style="font-family: reybold;">
           <li><a href="/html/index.html" data-key="home">Home</a></li>
           <li><a href="#bio" data-key="bio">Biography</a></li>
           <li><a href="#contact" data-key="contact">Form</a></li>
           <li><a href="#linkedin" data-key="linkedin">LinkedIn</a></li>
         </ul>
+</div>     
+<div class="lang lang-fa " dir="rtl">
+        <ul class="nav-links" id="nav-links"  style="font-family: reybold;">
+          <li><a href="/html/index.html" data-key="home">خانه</a></li>
+          <li><a href="#bio" data-key="bio">بیوگرافی</a></li>
+          <li><a href="#contact2" data-key="contact">فرم</a></li>
+          <li><a href="#linkedin2" data-key="linkedin">لینکدین</a></li>
+        </ul>
+</div>     
+
+
+
         <div class="lang-switch" >
           <button id="lang-en">EN</button>
           <button id="lang-fa">فا</button>
@@ -89,7 +101,7 @@
 
 
         <div class="bio-text lang lang-fa" dir="rtl">
-        <h1 style="font-family: reybold;">کیومرث</h1>
+        <h1 style="font-family: reybold;">کیومرث قربانیا</h1>
         <p style="font-family: reybold;" class="tagline">عدالت بیستم یبخثجب ئرسنسیش</p>
         
         <p style="font-family: reymedium;" class="bio">
@@ -105,8 +117,8 @@
           <li>🏛️ 20 سال تجربه کاری</li>
           <li>📍 داخل ونکوور کانادا</li>
         </ul>
-                <button  class="consult-btn">
-        <a href="#contact" style="text-decoration: solid; color: white; font-family: reylight;">درخواست دهید</a>
+        <button  class="consult-btn">
+        <a href="#contact2" style="text-decoration: solid; color: white; font-family: reylight;">درخواست دهید</a>
         <span class="tooltip">🎉 رایگان</span>
         </button> 
       </div>
@@ -160,7 +172,7 @@
 </div>
 <!--FA-->
 <div class="bio-text lang lang-fa" dir="rtl">
-  <section id="contact" data-aos="fade-right">
+  <section id="contact2" data-aos="fade-right">
     <h2 style="text-align:center; font-size: 300%; font-family: reybold;"> درخواست مشاوره (حقوق ایران)</h2>
           <section id="consulting" class="form-section">
             <!-- FREE CONSULTING HERO BANNER -->
@@ -176,10 +188,10 @@
 
 <div class="bio-text lang lang-en" >
     <form action="https://formspree.io/f/xyzdgder" method="POST" class="contact-form" id="contact-form">
-      <input class="name" type="text" name="name" placeholder="Your Name" required>
+      <input class="name" type="text" name="name" pattern="[a-z]" placeholder="Your Name" required>
       <input class="lname" type="text" name="lname" placeholder="Your Last name" required>
-      <input class="email" type="email" name="email" placeholder="Your Email" required>
-      <input class="phones" type="tel" name="phone" placeholder="Phone Number" required>
+      <input class="email" type="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="Your Email (eg. youremail@email.com)" required>
+      <input class="phones" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}|[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="Phone Number (eg. xxx-xxx-xxxx)" required>
       <textarea class="message" name="message" placeholder="Describe your legal problem, preferably in full." required></textarea>
       <button type="submit" class="btn consult-btn">Send Request
                 <span class="tooltip">🎉 Full Free 🎉</span>
@@ -189,10 +201,10 @@
 <!-- FA -->
 <div class="bio-text lang lang-fa" dir="rtl">
     <form action="https://formspree.io/f/xyzdgder" method="POST" class="contact-form" id="contact-form">
-      <input class="name" type="text" name="name" placeholder="اسم خود را وارد کنید" required>
-      <input class="name" type="text" name="name" placeholder="فامیلی خود را وارد کنید" required>
-      <input class="email" type="email" name="email" placeholder="ایمیل خود را وارد کنید" required>
-      <input dir="rtl" class="phones" type="tel" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="شماره تلفن همراه خود را وارد کنید" required>
+      <input class="name" type="text" name="name" pattern="[a-z]" placeholder="اسم خود را وارد کنید (به انگلیسی)" required>
+      <input class="name" type="text" name="name" pattern="[a-z]" placeholder="فامیلی خود را وارد کنید (به انگلیسی)" required>
+      <input class="email" type="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="ایمیل خود را وارد کنید" required>
+      <input dir="rtl" class="phones" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="شماره تلفن همراه خود را وارد کنید (eg. xxx-xxx-xxxx)"required>
       <textarea class="message" name="message" placeholder="مشکل حقوقی خود را ترجیحا به صورت کامل شرح دهید" required></textarea>
       <button style="font-family: reylight;" type="submit" class="btn consult-btn">ارسال درخواست
         <span class="tooltip">🎉 100% رایگان 🎉</span>
@@ -238,10 +250,10 @@
 
 <!-- FA -->
 
-<div class="bio-text lang lang-fa" dir="rtl">
-  <section id="linkedin" class="linkedin-section">
+<div class="lang lang-fa" dir="rtl">
+  <section id="linkedin2" class="linkedin-section">
     <div class="linkedin-container">
-      <p class="linkedin-subtitle" style="font-family: reybold;" >شبکه حرفه‌ای</p>
+      <p class="linkedin-subtitle"2 >شبکه حرفه‌ای</p>
       <h2 class="letsconnect" style="font-family: reybold;"> بیایید در <strong class="linkdin-strong"> لینکدین  </strong>ارتباط برقرار کنیم</h2>
       <p style="font-family: reylight;" class="linkedin-desc">
 با سفر حرفه‌ای، بینش‌ها و تخصص حقوقی من آشنا شوید.
@@ -275,13 +287,13 @@
   <!-- Footer -->
 <div class="lang lang-en">
   <footer class="footer1">
-    <p>Email : k.ghorbania@gmail.com //// Phone : (778) 700-1517</p>
+    <p style="text-decoration: none;">Email : k.ghorbania@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phone : (778) 700-1517</p>
   </footer>
 </div>
 <!-- FA -->
 <div class="lang lang-fa" dir="rtl">
   <footer class="footer1 ">
-    <p dir="rtl">ایمیل : k.ghorbania@gmail.com //// شماره تلفن همراه : 1517 700 (778)</p>
+    <p style="text-decoration: none; font-family: rey;" dir="rtl">ایمیل : k.ghorbania@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; شماره تلفن همراه : 1517 700 (778)</p>
   </footer>
 </div>
 
@@ -294,9 +306,9 @@
 </div>
 
 <div class="lang lang-fa" dir="rtl">
-  <footer class="footer-hide">
-    <p> k.ghorbania@gmail.com : ایمیل </p>
-    <p> 1517 700 (778) : شماره تلفن همراه</p>
+  <footer class="footer-hide" style="font-family: rey;">
+    <p style="text-decoration: none;"> k.ghorbania@gmail.com : ایمیل </p>
+    <p style="text-decoration: none;"> 1517 700 (778) : شماره تلفن همراه</p>
   </footer>
 </div>
 
